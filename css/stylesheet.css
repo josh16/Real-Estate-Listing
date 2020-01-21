@@ -1,0 +1,345 @@
+/* CSS RESET */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset margins and paddings on most elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* endOF CSS RESET */
+
+
+/*
+- CSS VARIABLES
+*/
+:root{
+    --red-color:#ED3D3D;
+    --title-red:#D80000;
+    --snow-white:#FFFAFA;
+    --dark-white:#e5e5e5;
+    --light-green:#00CC66;
+    --lighter-green:#00CC00;
+    --gradient-red:linear-gradient(indianred,red);    
+}
+
+
+body{
+    background-color:var(--snow-white);
+}
+
+header{
+    margin-bottom: 20px;
+    padding:3px;
+    height:80px;
+    background-color:var(--red-color);
+    border:2px solid black;
+    border-style:none none solid none;
+}
+
+
+.nav-large a{
+    color:white;
+    font-size:18px;
+    font-weight: 600;
+}
+
+.nav-large li:hover{
+    background-color: white;
+    border:none;
+}
+
+.nav-large a:hover{
+    color:crimson;
+}
+
+.title{
+    color:white;
+    margin:15px 0px 0px 15px;
+    font-family: 'DM Serif Text', serif;
+    text-align: center;
+}
+
+.mobile-title{
+    background-color: var(--red-colour);
+    font-family: 'DM Serif Text', serif;
+    text-align: center;
+}
+
+.mobile-title h1{
+    padding-left: 50px;
+    font-size:26px;
+}
+
+/*Universal title*/
+.category-title{
+    text-align:center;
+    color:white;
+    background-color: crimson;
+    margin:20px 0px 20px 0px;
+    padding:5px 10px;
+    border-radius:4px;
+    border:1px solid black;
+    box-shadow:3px 5px grey;
+}
+
+
+.category-title-large{
+    margin-bottom: 20px;
+    box-shadow:3px 5px grey;
+    border:1px solid black;
+    border-style:none solid;
+}
+
+.category-title-large h2{
+    background-color:crimson;
+    color:white;
+    padding:2px 0px 2px 4px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-style: solid none;
+}
+
+.category-title-large ul{
+    border:0.5px solid black;
+    list-style: none;
+    border-style:none;
+    padding:2px 0px 5px 0px;
+    padding-left:8px;
+}
+
+.category-title-large h3{
+   text-align: left;
+    padding-left:4px;
+    border:0.5px solid black;
+    border-style:none;
+    background-color:var(--dark-white);
+}
+
+
+.main{
+    /*position: relative;*/
+    
+}
+
+.balcony-img{
+    margin-bottom: 30px;
+}
+
+.landing-msg{
+    text-align: center;
+    margin-bottom: 30px;
+    height:135px;
+    padding:15px 5px;
+    border:5px solid crimson;
+    border-style: solid none;
+}
+
+.landing-msg h3 h2{
+    /*text-align: justify-all;*/
+    font-weight: 700;
+    text-align: center;
+}
+
+
+footer{
+    margin-top:20px;
+    padding:2px;
+    height:80px;
+    background-color:var(--red-color);
+    border:2px solid black;
+    border-style:solid none none none;
+}
+
+/*Footer slogan*/
+.footer-slogan{
+    color:white;
+    margin:15px 0px 0px 15px;
+    font-family: 'DM Serif Text', serif;
+    text-align: center;
+}
+
+.photo-style{
+    box-shadow: 7px 5px 10px grey;
+    border-radius:3px;
+}
+
+/*Icons*/
+.logo-icon{
+    margin-top:2px;
+    height:70px;
+    width:70px;
+}
+
+/*
+-Features webpage
+*/
+
+
+.address-info{
+    margin-bottom: 15px;
+    padding:10px 0px;
+    border:3px solid crimson;
+    border-style:solid none; 
+    background-color:var(--red-color);
+    color:white;
+    text-align: center;
+}
+
+
+/*Contact seller*/
+.seller-info{
+    margin:15px 5px;
+    padding:2px;
+    border:1px solid var(--title-red);
+    border-radius:3px;
+    box-shadow: 3px 5px grey;
+    text-align:center;
+    /*background-image: linear-gradient(var(--light-green),var(--lighter-green));*/   
+}
+
+.seller-info h3{
+    padding:2px;
+    color:var(--title-red);
+}
+
+.contact-icons{
+    margin:-5px 10px 10px 18px;
+    width:32px;
+}
+ 
+
+
+/*Property info*/
+.property-info{
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding:10px 8px;
+    border: 1px solid black;
+    border-style:solid none;
+    box-shadow: 3px 3px grey;
+}
+
+.property-info table th{
+    text-align: left;
+}
+
+property-info-large tr,th {
+    text-align: left;
+}
+
+
+.feat-list li a{
+    color:var(--title-red);
+    text-decoration: none;
+    border:1px solid grey;
+    border-radius:5px;
+}
+
+.feat-list li a:hover{
+    background-image:var(--gradient-red);
+    color:white;
+}
+
+.feat-item-list{
+    border:1px solid grey;
+    background-color:var(--dark-white);
+}
+
+.feat-item-list ul{
+    padding-left:8px;
+    list-style: none;
+}
+
+.feat-item-list ul li::before{
+    content:"\2022";
+    color:var(--title-red);
+    margin-left:-1em;
+    font-weight: bold;
+    display: inline-block;/*Add space between the bullets*/ 
+    width:1em;
+}
+
+/*
+- Gallery Web page section
+*/
+
+.apt-image{
+    height:500px;
+    width:470px;
+}
+
+.map-location{
+    margin:0px 0px 20px 0px;     
+}
+
+.open-maps{
+    margin:15px 0px;
+    padding:5px;
+    text-align:center;
+    background-color:#0086ED;
+    border-radius:5px;
+    border:1px solid black;
+}
+
+.open-maps a{
+    text-decoration: none;
+    color:white;
+}
+
+/*Animation*/
+.maple-anim{
+    display: inline-block; 
+    animation-name: maple-leaf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes maple-leaf{
+    0%{width:54px;}
+    100%{width:74px;}
+}
+
+/*Off canvas menu style*/
+
+.off-canvas-menu-style a{
+    text-decoration: none;
+    color:crimson;
+    font-weight:500;
+}
+
+.off-canvas-menu-style li{
+    padding:5px 0px 5px 5px;    
+}
+
+.off-canvas-menu-style a:hover{
+    color:#0093D5;
+}
+
+/*Orbit container max height MODIFIED*/
+.orbit-container{
+    max-height:310px;
+}
