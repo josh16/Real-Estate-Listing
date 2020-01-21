@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!--off canvas menu-->     
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition ="overlap">
+        
+          <!--Vertical menu-->
+        <ul class="off-canvas-menu-style vertical">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feature.html">Features</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+          
+            <!--off canvas close button-->
+          <button class="close-button" aria-label ="Close menu" type="button" data-close>
+            <span aria-hidden ="true">&times;</span>
+          </button>
+      </div>
+      
+      <!--MAIN BODY SECTION-->
+      <div class="grid-container full off-canvas-content" data-off-canvas-content>
+          
+          <!--Header-->
+          <header class="grid-x">
+             <!--MOBILE/TABLET NAVBAR-->
+              <div class="title-bar mobile-title cell small-10 hide-for-large">
+                 <button class="menu-icon" type="button" data-open="offCanvasLeft" data-toggle="offCanvas">
+                  </button>
+                  
+                  <!--MOBILE TITLE-->
+                  <h1 class="medium-offset-3">Toronto Homes</h1>
+              </div>
+            
+              <!--MOBILE LOGO-->
+              <article class="cell small-2 medium-2 hide-for-large">
+                <img class="logo-icon" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/cn-tower-black.svg" alt="CN tower logo">
+              </article>
+            <!-- Nav menu LARGE-->
+              <nav class="nav-large cell large-4 show-for-large align-self-middle">
+                  <ul class="menu dropdown" data-dropdown>
+                      <li class="is-active"><a href="index.html">Home</a></li>
+                      <li><a href="feature.html">Features</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                  </ul>
+              </nav>
+              <!--title LARGE-->
+              <article class="title cell large-4 show-for-large">
+                <h1>Toronto Homes</h1>
+              </article>
+              <!--Logo LARGE-->
+              <article class="cell large-1 large-offset-1  show-for-large">
+                <img class="logo-icon" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/cn-tower-black.svg" alt="building-image">
+              </article> 
+          </header>
+          
+          <!--Main section-->
+          <section class=" grid-x main align-center grid-padding-x grid-padding-y">
+              
+              <!--Landing msg MOBILE SCREEN-->
+              <article class="landing-msg cell small-10 medium-8 hide-for-large">
+                  <h3>Looking for a new place to live in the city?</h3>
+                 
+                  <img data-interchange="[http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/maple-leaf-icon-small.png, small],[http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/maple-leaf-icon-med.png, medium]">
+              </article>
+              
+              <!--Landing msg LARGE SCREEN-->
+              <article class=" landing-msg cell large-8 show-for-large">
+                  <h2>Looking for a new place to live in the city?</h2>
+                  <img class="maple-anim" src ="img/icons/maple-leaf-icon.png">
+              </article>
+               
+              <!--Toronto skyline image-->
+              <article class ="cell show-for-medium medium-10 large-11">
+                  <img class="photo-style" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/toronto-skyline-large.png">
+              </article>
+               
+              <!--Images for LARGE SCREEN-->
+               <article class=" cell small-12 medium-8 large-4">
+                   <!--<img class=" photo-style img-padding" data-interchange="[img/small/apartment-inside-mobile.jpg, small],[img/apartment-inside-medium.png, large]">-->
+                   <img class="photo-style" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/living-room-small.jpg" alt ="Living room image">
+                </article>
+              
+              <article class="cell large-4 show-for-large">
+                <img class=" photo-style" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/balcony-4-medium.jpg" alt="Balcony image 3">
+              </article>
+              
+                <article class="cell large-4 show-for-large">
+                <img class=" photo-style img-padding" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/kitchen-2-medium.jpg" alt="bathroom">
+              </article>
+               
+              <!--Landing msg MOBILE screen-->
+              <article class="landing-msg cell small-10 medium-8 large-10">
+                <h3>Let's make that easy for you.</h3>
+                  <img data-interchange="[http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/maple-leaf-icon-small.png, small],[http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/maple-leaf-icon-med.png, medium]">
+              </article>
+          </section>
+
+          <!--Footer-->
+          <footer class="grid-x align-center">
+            <!--Footer slogan-->
+              <article class="footer-slogan cell small-12">
+                <h1>Proudly Canadian</h1>
+              </article>
+          </footer>
+      </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- ********* IMAGE GALLERY WEBPAGE******** -->
+      
+      <!--off canvas menu-->     
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition ="overlap">
+        
+          <!--Vertical menu-->
+        <ul class="off-canvas-menu-style vertical">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feature.html">Features</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+          
+            <!--off canvas close button-->
+          <button class="close-button" aria-label ="Close menu" type="button" data-close>
+            <span aria-hidden ="true">&times;</span>
+          </button>
+      </div>
+      
+      <!--MAIN BODY SECTION-->
+      <div class="grid-container full  off-canvas-content" data-off-canvas-content>
+        
+          <!--Header-->
+          <header class="grid-x">
+              <!--MOBILE/TABLET NAVBAR-->
+              <div class="title-bar mobile-title cell small-10 hide-for-large">
+                 <button class="menu-icon" type="button" data-open="offCanvasLeft" data-toggle="offCanvas">
+                  </button>
+                  
+                  <!--MOBILE TITLE-->
+                  <h1 class="medium-offset-3">Toronto Homes</h1>
+              </div>
+            
+              <!--MOBILE LOGO-->
+              <article class="cell small-2 medium-2 hide-for-large">
+                <img class="logo-icon" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/cn-tower-black.svg" alt="CN tower logo">
+              </article>
+              
+            <!-- Nav menu LARGE-->
+              <nav class="nav-large align-self-middle cell large-4 show-for-large">
+                  <ul class="menu dropdown" data-dropdown>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="feature.html">Features</a></li>
+                      <li class="is-active"><a href="gallery.html">Gallery</a></li>
+                  </ul>
+              </nav>
+            
+              <!--title LARGE-->
+              <article class="title cell large-4 show-for-large">
+                <h1>Toronto Homes</h1>
+              </article>
+              
+              <!--Logo LARGE-->
+              <article class="cell large-1 large-offset-1 show-for-large">
+                <img class="logo-icon" src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/icons/cn-tower-black.svg" alt="building-image">
+              </article> 
+          </header>
+          
+         <!--Gallery section-->
+          <section class="grid-x align-center">
+            
+              <!--Title ORBIT gallery-->
+            <article class="cell small-11 medium-8 large-5">
+                <h2 class="category-title">Image Gallery</h2>
+            </article>    
+              
+              <!--Orbit gallery SMALL SCREEN-->
+              <div class="orbit cell  hide-for-medium" role="region" aria-label="Condo pictures" data-orbit>
+                
+                  <div class="orbit-wrapper">
+                   <div class="orbit-controls">
+                      <!--Prev button-->
+                       <button class="orbit-previous">
+                       <span class="show-for-sr"></span>&#9664;&#xFE0E;
+                       </button>
+                       <!--next button-->
+                       <button class="orbit-next"><span class="show-for-sr"></span>&#9654;&#xFE0E;</button>
+                    </div>    
+                    
+                      <ul class="orbit-container">
+                        <!--Living room images-->
+                        <li class="orbit-slide is-active">
+                            <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/apartment-inside-SMALL.jpg" class="orbit-image" alt="Apartment living room"> 
+                        </li>
+                       
+                        <!--Living room_2-->
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/living-room-small.jpg" class="orbit-image" alt=" Apartment living room view">
+                        </li>
+                        <!--Kitchen_1-->
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/kitchen-1-small.jpg" class ="orbit-image" alt="Kitchen/living room view">
+                        </li>
+                          <!--Kitchen_1-->
+                        <li class="orbit-slide">
+                            <img src = "http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/kitchen-2-small.jpg" class="orbit-image" alt="Kitchen/table view">
+                        </li>
+                        <!--Kitchen_3-->  
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/kitchen-3-small.jpg" class="orbit-image" alt="Kitchen/living room view 2">
+                        </li>
+                        <!--Bedroom-->  
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/bedroom-small.jpg" class="orbit-image" alt="Bedroom">
+                        </li>
+                          <!--Doorway-->
+                          <li class="orbit-slide">
+                            <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/doorway-small.jpg" class="orbit-image" alt="Doorway">
+                          </li>
+                        <!--Hallway-->
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/hallway-small.jpg" class="orbit-image" alt="Hallway">
+                        </li>
+                        <!--Balcony/Outside images-->
+                        <li class="orbit-slide">
+                            <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/building-outside-small.jpg" class="orbit-image" alt="Apartment building">
+                        </li>
+                        <!--Balcony_1-->  
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-1-small.jpg" class="orbit-image" alt="balcony view 1">
+                        </li>
+                          <!--Balcony_2-->
+                         <li class="orbit-slide">
+                            <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-2-small.jpg" class="orbit-image" alt="balcony view 2">
+                        </li>
+                        <!--Balcony_3-->  
+                        <li class="orbit-slide">
+                            <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-3-small.jpg" class="orbit-image" alt="balcony view 3">
+                        </li>
+                        <!--Balcony-4-->  
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-4-small.jpg" class="orbit-image" alt="balcony view 4">
+                        </li>
+                        <!--Balcony-5-->  
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-5-small.jpg" class="orbit-image" alt="balcony view 5">
+                        </li>
+                        <!--Balcony-6-->  
+                        <li class="orbit-slide">
+                            <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-6-small.jpg" class="orbit-image" alt="balcony view 6">
+                        </li>
+                       </ul>  
+                  </div>         
+              </div>
+              <!--Card image gallery-->
+              <section class="grid-x grid-padding-x grid-padding-y grid-margin-x grid-margin-y  show-for-medium">
+                  <!--Living room-->
+                  <article class="small cell medium-4 large-4 card">
+                      <article class="card-divider">Living room</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/apartment-inside-SMALL.jpg" alt="Apartment inside">
+                  </article>
+                  <!--Living room_2-->
+                  <article class="cell medium-4 large-4  card">
+                      <article class="card-divider">Living room image 2</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/living-room-small.jpg" alt="Living Room">
+                  </article>
+                   <!--Bedroom-->
+                    <article class="cell medium-4 large-4  card">
+                      <article class="card-divider">Bedroom</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/bedroom-small.jpg" alt="Bedroom">
+                  </article>
+                    <!--Kitchen_1-->
+                    <article class="cell medium-4 large-4  card">
+                      <article class="card-divider">Kitchen view</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/kitchen-1-small.jpg" alt="Kitchen img 1 image">
+                    </article>
+                  <!--Kitchen_2-->
+                    <article class="cell medium-4 large-4  card">
+                      <article class="card-divider">Full Kitchen view</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/kitchen-2-small.jpg" alt="Kitchen img 2">
+                    </article>
+                  <!--Kitchen_3-->
+                <article class="cell medium-4 large-4  card">
+                      <article class="card-divider">Kitchen view image 2</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/kitchen-3-small.jpg" alt="Kitchen img 3">
+                  </article>
+                  <!--Hallway-->
+                  <article class="cell medium-4 large-4 card">
+                    <article class="card-divider">Hallway view</article>
+                      <img src ="img/small/hallway-small.jpg" alt="Hallway">
+                  </article>
+                  <!--Doorway-->
+                  <article class="cell medium-4 large-4 card">
+                    <article class="card-divider">Doorway</article>
+                      <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/doorway-small.jpg" alt="Doorway">
+                  </article>
+                  <!--Balcony 1-->
+                  <article class="cell medium-4 large-4 card">
+                        <article class="card-divider">Balcony view 1</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-1-small.jpg" alt="Balcony 1 img">
+                  </article>
+                  <!--Balcony 2-->
+                  <article class="cell medium-4 large-4 card">
+                        <article class="card-divider">Balcony view 2</article>
+                        <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-2-small.jpg" alt="Balcony 2 img">
+                  </article>
+                  <!--Balcony 3-->
+                  <article class="cell medium-4 large-4 card">
+                    <article class="card-divider">Balcony view 3</article>
+                    <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-3-small.jpg" alt="Balcony 3 img">
+                  </article>
+                  <!--Balcony 4-->
+                   <article class="cell medium-4 large-4 card">
+                    <article class="card-divider">Balcony view 4</article>
+                    <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-4-small.jpg" alt="Balcony 4 img">
+                  </article>
+                  <!--Balcony 5-->
+                  <article class="cell medium-4 medium-offset-1 large-4 card">
+                    <article class="card-divider">Balcony view 5 </article>
+                      <img src="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-5-small.jpg" alt="Balcony 5 img">
+                  </article>
+                  <!--Balcony 6-->
+                  <article class="cell medium-4 medium-offset-2 large-4 card">
+                    <article class="card-divider">Balcony view 6</article>
+                    <img src ="http://comp9632.gbchosting.ca/sid/100961575/project_two/img/small/balcony-6-small.jpg" alt="Balcony 6 img">
+                  </article>
+              </section>
+              <!--Location title-->
+              <article class="cell small-11 medium-10 large-7">
+                <h2 class="category-title">Map Location</h2>
+              </article>
+              <!-- Open Maps Link-->    
+              <article class="open-maps small-3 medium-3 hide-for-large align-self-middle">
+                    <a href="geo:43.659370,-79.376700">Maps</a> 
+           </article>
+              <!--Map location-->
+               <iframe class="cell small-11 medium-10 large-8 map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.271216195153!2d-79.37789324483025!3d43.66332890581035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb4c8394c70b%3A0xaa736d560565c18e!2sToronto%2C+ON+M4Y+3C4!5e0!3m2!1sen!2sca!4v1561571888865!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </section>
+          <!--Footer-->
+          <footer class="grid-x align-center">
+            <!--Footer slogan-->
+              <article class="footer-slogan cell small-12">
+                <h1>Proudly Canadian</h1>
+              </article>
+          </footer>
+      </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
